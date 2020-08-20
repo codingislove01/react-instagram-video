@@ -1,38 +1,99 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  width: 600px;
+  max-width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clickable {
+  cursor: pointer;
+}
+
+.post {
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.bar-left {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  margin-right: 15px;
+}
+
+.profile-name {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.menu-icon {
+  width: 1em;
+  height: auto;
+}
+
+.video-container {
+}
+
+.video-wrapper {
+  position: relative;
+}
+
+.action-icon {
+  width: 1.5em;
+  height: auto;
+  margin-right: 1.2em;
+  cursor: pointer;
+}
+
+.action-icon-right {
+  width: 1.5em;
+  cursor: pointer;
+}
+
+.video {
+  width: 100%;
+  display: block;
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.video-control {
+  width: 100px;
+  transition: opacity 200ms linear;
+}
+
+.control-shown {
+  opacity: 1;
+}
+
+.control-hidden {
+  opacity: 0;
 }
